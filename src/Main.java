@@ -37,5 +37,9 @@ public class Main {
         }
     }
 
+    public static void sravnenieKachestv(Hogwarts[] students) {
+
+    }
+
 
 }
