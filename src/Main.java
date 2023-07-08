@@ -1,7 +1,8 @@
 public class Main {
-    public static void main(String[] args) {
 
-        System.out.println("ХОГВАРТС:");
+    public static void main(String[] args) {
+                System.out.println("ХОГВАРТС:");
+
 
 
         Hogwarts[] students = {
@@ -24,6 +25,17 @@ public class Main {
         };
 
         System.out.println("Количество учеников = " + students.length);
+        printStudents(students);
     }
+
+    public static void printStudents(Hogwarts[] students) {
+        for (int i = 0; i < students.length; i++) {
+            Hogwarts student = students[i];
+            System.out.println(student.getName() + " " + student.getSurname());
+            System.out.println("Качества: колдовство = " + student.getKoldovstvo() +
+                    ", трансгрессия = " + student.getTransgressia());
+        }
+    }
+
 
 }
