@@ -4,29 +4,35 @@ public class Main {
                 System.out.println("ХОГВАРТС:");
 
 
+      Gryffindor garry =   new Gryffindor("Гарри", "Поттер", 86, 74, 59, 40, 99);
+      Gryffindor germiona =   new Gryffindor("Гермиона", "Грейнджер", 95, 59, 86, 64, 82);
+      Gryffindor ron =   new Gryffindor("Рон", "Уизли", 42, 37, 66, 20, 49);
 
-        Hogwarts[] students = {
+      Slytherin draco =   new Slytherin("Драко", "Малфой", 73, 44, 95, 82, 97, 89);
+      Slytherin grehem =  new Slytherin("Грэхэм", "Монтегю", 38, 54, 39, 61, 18, 58);
+      Slytherin gregory =   new Slytherin("Грегори", "Гойл", 28, 22, 46, 30, 61, 38);
 
-        new Gryffindor("Гарри", "Поттер", 86, 74, 59, 40, 99),
-        new Gryffindor("Гермиона", "Грейнджер", 95, 59, 86, 64, 82),
-        new Gryffindor("Рон", "Уизли", 42, 37, 66, 70, 69),
+      Hufflepuff zaharia =  new Hufflepuff("Захария", "Смит", 18, 26, 45, 36, 14);
+      Hufflepuff sedrik =  new Hufflepuff("Седрик", "Диггори", 75, 62, 44, 73, 58);
+      Hufflepuff jastin =  new Hufflepuff("Джастин", "Финч-Флетч", 50, 46, 63, 68, 35);
 
-        new Slytherin("Драко", "Малфой", 73, 44, 95, 82, 97, 89),
-        new Slytherin("Грэхэм", "Монтегю", 38, 54, 39, 61, 18, 58),
-        new Slytherin("Грегори", "Гойл", 28, 22, 46, 30, 61, 38),
+      Ravenclaw jou =  new Ravenclaw("Джоу", "Чанг", 95, 59, 76, 83, 40, 57);
+      Ravenclaw padma =  new Ravenclaw("Падма", "Патил", 20, 35, 64, 49, 67, 88);
+      Ravenclaw markus =  new Ravenclaw("Маркус", "Белби", 58, 47, 84, 62, 90, 87);
 
-        new Hufflepuff("Захария", "Смит", 18, 26, 45, 36, 14),
-        new Hufflepuff("Седрик", "Диггори", 75, 62, 44, 73, 58),
-        new Hufflepuff("Джастин", "Финч-Флетч", 50, 46, 63, 68, 35),
+        System.out.println("germiona = " + germiona);
+        System.out.println("padma = " + padma);
+        System.out.println("gregory = " + gregory);
+        System.out.println("sedrik = " + sedrik);
 
-        new Ravenclaw("Джоу", "Чанг", 42, 58, 76, 83, 40, 57),
-        new Ravenclaw("Падма", "Патил", 20, 35, 64, 49, 67, 88),
-        new Ravenclaw("Маркус", "Белби", 58, 47, 84, 62, 90, 87),
-        };
 
-        System.out.println("Количество учеников = " + students.length);
-        printStudents(students);
+        garry.sravnenie(ron);
+        garry.sravnenie(draco);
+        germiona.sravnenie(jou);
     }
+
+
+
 
     public static void printStudents(Hogwarts[] students) {
         for (int i = 0; i < students.length; i++) {
